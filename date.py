@@ -42,6 +42,7 @@ Menu={
 }
 print(f"Here is our Menu: \n {Menu}")
 
+
 #take some user input using input
 taste = input("Do you know the taste of your date? (yes/no)\n")
 if(taste == "yes"):
@@ -53,26 +54,48 @@ elif (taste == "no"):
 def get_order(budget):
     #the buget here is string when taking the user input. To compare with float or int, we need to cast
     total = float(budget)
-    Apptizer = input("What apptizer you would like to order?\n")
+
+    # app
+    print(f"Your can select the appertizer by typing the name: ")
+    for key in Menu["AppMenu"]:
+        print(key)
+    Apptizer = input("What apptizer you would like to order?")
     total -=  Menu["AppMenu"][Apptizer]["price"]
     print(f"You have {total} dollars left")
 
+    #entree
+    print(f"Your can select the entree by typing the name:  ")
+    for key in Menu["Entree"]:
+        print(key)
     Entree = input("What entree you would like to order? \n")
     total -= Menu["Entree"][Entree]["price"]
     print(f"You have {total } dollars left")
 
+    #dessert
+    print(f"Your can select the dessert by typing the name: ")
+    for key in Menu["Dessert"]:
+        print(key)
     Dessert = input("Do you want some dessert? \n")
     total -= Menu["Dessert"][Dessert]["price"]
     print(f"You have {total } dollars left")
 
+    print(f"Your can select the appertizer by typing the name: ")
+    for key in Menu["AppMenu"]:
+        print(key)
     Apptizer_date = input("What apptizer you would like to order for your date?\n")
     total -= Menu["AppMenu"][Apptizer_date]["price"]
     print(f"You have {total } dollars left")
 
+    print(f"Your can select the entree by typing the name:  ")
+    for key in Menu["Entree"]:
+        print(key)
     Entree_date = input("What entree you would like to order for your date? \n")
     total -= Menu["Entree"][Entree_date]["price"]
     print(f"You have {total } dollars left")
 
+    print(f"Your can select the dessert by typing the name: ")
+    for key in Menu["Dessert"]:
+        print(key)    
     Dessert_date = input("Do you want some dessert for your date? \n")
     total -= Menu["Dessert"][Dessert_date]["price"]
     print(f"You have {total } dollars left")
