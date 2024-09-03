@@ -6,8 +6,9 @@ Bonus Modify your script to count the number of files and directories separately
 
 count_file = 0
 count_dir = 0
-path = input("Please enter a directory name \n")
-print(os.path.join(path, "/home/ubuntu/", path))
+dir = input("Please enter a directory name \n")
+path = os.path.join("/home/ubuntu", dir)
+
 if(os.path.exists(path)):
     for path in os.scandir(path):
         if path.is_file():
