@@ -9,10 +9,12 @@ def uptime_percentage(total_hours, down_hours):
     uptime = total_hours - down_hours
     up_perct = (uptime / total_hours) * 100
     up_round = round(up_perct, 2)
-    print(f"The up time percentage for the service is {up_round}%")
+    
     return up_round
 
 
 down_time = input("What's the down time for this service in hours? \n")
 total_time = input("What's the total time for this service in hours? \n")
-uptime_percentage(float(total_time), float(down_time))
+up_percentage = uptime_percentage(float(total_time), float(down_time))
+
+print(f"The up time percentage for the service is {up_percentage}%")
