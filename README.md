@@ -23,4 +23,41 @@ The date simulator does the following:
   * Ask for the satisfaction rate from the date's perspective.
 * Challenge: Based on all the user inputs, the script should decide whether the user will get a second date or not and tell the user the decision.
   * The threshold for the second date was set to 7, if the final score below 7, then the user probably not going to have the next date; if higher than 7, the user very likely to get the next date.
+ 
+## Exercise Two:  Search from Youtube Music  
 
+This script is for practicing making API calls in Python. It involves becoming familiar with the `requests` module and the `json` module, as well as getting used to manipulating response data from an API to make it readable.  
+
+
+## Description  
+
+By running this script, the user can search through the suggestions or the entire YouTube Music Library. The user can also provide the author name or song name they intend to search for to make the search more accurate.  
+
+
+### APIs
+* <a href="(https://rapidapi.com/Paxsenix0/api/youtube-music-api3)" target="_blank">YouTube-Music-API</a>
+### Results
+* Search suggestions
+<div align='center'>
+ 
+  <img width="639" alt="image" src="https://github.com/user-attachments/assets/9745fef3-393b-4e4c-be47-b8d62fbbaf78">
+
+ </div>
+
+ 
+* Search from the library
+
+<div align='center'>
+ 
+  <img width="704" alt="image" src="https://github.com/user-attachments/assets/b913f64f-7240-4cbd-ab81-8b149af428f7">
+
+ </div>
+
+* If no result matches
+
+<div align='center'>
+ 
+  <img width="704" alt="image" src="https://github.com/user-attachments/assets/5fec5216-0e55-4cbd-990f-06debc8a4da2">
+
+
+ </div>
